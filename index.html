@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body{
+      display: flex;
+      justify-content: center;
+      margin-top: 7%;
+      
+    }
+    
+
+    .container{
+      display: grid;
+      width: 748px;
+      
+    
+      /*4 columns- 320px, 198px, 153px,50px
+      4 rows- 414px, 130px,155px,20px*/
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      
+      
+      
+      
+    }
+    .red{
+      background-color: #E72F24;
+      grid-area: 1/1/1/2;
+      border-right: 9px solid black;
+      border-bottom: 9px solid black;
+    }
+    
+    .w1{
+      background-color: #F0F1EC;
+      grid-area: 1/2/1/-1;
+      border-bottom: 9px solid black;
+
+    }
+    .w2{
+      background-color: #F0F1EC;
+      grid-area: 2/1/4/2;
+      border-right: 9px solid black;
+      border-bottom: 9px solid black;
+    }
+    .w3{
+      background-color: #F0F1EC;
+      grid-area: 2/2/4/4;
+      border-right: 9px solid black;
+      border-bottom: 9px solid black;
+      
+
+    }
+    .blue{
+      background-color: #004592;
+      grid-area: 2/4/3/-1;
+      border-bottom: 20px solid black;
+    }
+    .w4{
+      background-color: #F0F1EC;
+      grid-area: 4/1/-1/2;
+      border-right: 9px solid black;
+    }
+    .yellow{
+      background-color: #F9D01E;
+      grid-area: 4/2/-1/3;
+      border-right:9px solid black
+    }
+    .black{
+      background-color: #232629;
+      grid-area: 4/3/-1/4;
+      border-right: 9px solid black;
+    }
+    .w5{
+      background-color: #F0F1EC;
+      grid-area: 3/4/-1/-1;
+    }
+
+    
+
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="Paint">
+    <div class="container">
+      <div class="red"></div>
+      <div class="black"></div>
+      <div class="blue"></div>
+      <div class="yellow"></div>
+      <div class="w1"></div>
+      <div class="w2"></div>
+      <div class="w3"></div>
+      <div class="w4"></div>
+      <div class="w5"></div>
+    </div>
+  </div>
+</body>
+
+
+</html>
